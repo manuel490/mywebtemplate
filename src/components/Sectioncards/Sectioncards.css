@@ -1,0 +1,23 @@
+.sectionContainerCard {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: -5rem;
+  margin-bottom: -1rem;
+}
+
+.sectionCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  gap: 4rem;
+  width: 95%;
+  border-radius: 20px;
+  border: 1px solid rgba(211, 211, 211, 0.562);
+  background: #e0e0e0;
+  box-shadow: 35px 35px 58px #d7d7d7, -35px -35px 58px #e9e9e9;
+}

@@ -1,0 +1,51 @@
+.frontpage {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 35rem;
+
+  background-color: #151515;
+  color: white;
+}
+
+.frontpage .logof {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 50%;
+  border-left: 1px solid white;
+  padding: 1rem;
+}
+
+.frontpage .info {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 50%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.frontpage .info p {
+  color: white !important;
+  text-shadow: 1px 1px 1px rgba(95, 95, 95, 0.603);
+}
+
+.homeImage img {
+  height: 300px;
+  width: 300px;
+}
+
+.portada {
+  width: 300px;
+}
+
+@media screen and (max-width: 768px) {
+  .logof {
+    display: none;
+    opacity: 0;
+  }
+  .frontpage .info {
+    margin-top: 6rem !important;
+  }
+}

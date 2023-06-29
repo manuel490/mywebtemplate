@@ -1,0 +1,46 @@
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.select-wrapper select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  appearance: none; /* Elimina los estilos nativos del select */
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Estilos para la flecha desplegable */
+.select-wrapper::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 3px);
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid white;
+  pointer-events: none;
+}
+
+/* Estilos para las opciones */
+.select-wrapper select option {
+  background-color: #151515;
+  color: white;
+}
+
+/* Estilos para el hover de las opciones */
+.select-wrapper select option:hover {
+  background-color: transparent;
+}
